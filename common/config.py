@@ -11,7 +11,7 @@ class Config(configparser.ConfigParser):
     def __init__(self):
         super().__init__()
         self.file = conf_path
-        self.read(self.file, encoding="utf8")
+        self.read(self.file, encoding="utf-8")
 
     def get_conf(self, section, *options) -> dict:
         op_list = []
