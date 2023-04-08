@@ -6,7 +6,8 @@ on:
       - master
   workflow_dispatch: 
   schedule:
-    - cron: '00 01 * * SAT'
+    - cron: '02 01 * * 0'
+    - cron: '02 03 * * 6'
 
 jobs:
   dy_auto_donate_helper:
